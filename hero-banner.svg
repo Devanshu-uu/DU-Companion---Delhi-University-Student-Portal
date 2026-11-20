@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0B14" />
+      <stop offset="50%" stop-color="#181324" />
+      <stop offset="100%" stop-color="#0E0B14" />
+    </linearGradient>
+
+    <radialGradient id="purpleGlow" cx="20%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#5B2B8E" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#5B2B8E" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="goldGlow" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#F2C14E" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#F2C14E" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="primaryText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#EDE4FA" />
+      <stop offset="100%" stop-color="#CDA9F2" />
+    </linearGradient>
+
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+
+    <linearGradient id="phoneCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A1244" />
+      <stop offset="100%" stop-color="#1B102B" />
+    </linearGradient>
+
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .f-heavy { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+    .f-bold  { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 700; }
+    .f-med   { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; }
+    .f-reg   { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; }
+  </style>
+
+  <!-- Background Layer -->
+  <rect width="1200" height="480" rx="20" fill="url(#bgGrad)" />
+  <rect width="1200" height="480" rx="20" fill="url(#purpleGlow)" />
+  <rect width="1200" height="480" rx="20" fill="url(#goldGlow)" />
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="80" x2="1200" y2="80" />
+    <line x1="0" y1="160" x2="1200" y2="160" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="320" x2="1200" y2="320" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="480" />
+    <line x1="400" y1="0" x2="400" y2="480" />
+    <line x1="600" y1="0" x2="600" y2="480" />
+    <line x1="800" y1="0" x2="800" y2="480" />
+    <line x1="1000" y1="0" x2="1000" y2="480" />
+  </g>
+
+  <!-- BORDER -->
+  <rect x="1" y="1" width="1198" height="478" rx="19" fill="none" stroke="#CDA9F2" stroke-opacity="0.15" stroke-width="2" />
+
+  <!-- ==================== LEFT: BRANDING & HERO CONTENT ==================== -->
+  <g transform="translate(80, 75)">
+    <!-- Pill Tag -->
+    <rect x="0" y="0" width="285" height="32" rx="16" fill="#2A1244" stroke="#7C3AED" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="16" cy="16" r="4" fill="#10B981" />
+    <text x="28" y="21" fill="#EDE4FA" font-size="12" class="f-bold" letter-spacing="0.5">OFFICIAL STUDENT ECOSYSTEM • DU</text>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 72)">
+      <text x="0" y="0" fill="url(#primaryText)" font-size="52" class="f-heavy" letter-spacing="-1">DU Companion</text>
+      <text x="0" y="44" fill="url(#goldText)" font-size="30" class="f-bold" letter-spacing="-0.5">Delhi University Student Portal</text>
+    </g>
+
+    <!-- Description -->
+    <text x="0" y="160" fill="#A8A2BC" font-size="16" class="f-reg" line-height="24">
+      <tspan x="0" dy="0">High-performance Native Android App powered by Kotlin &amp; Jetpack Compose.</tspan>
+      <tspan x="0" dy="24">Everything a DU student needs to learn, prepare, and excel.</tspan>
+    </text>
+
+    <!-- Feature Badges Row -->
+    <g transform="translate(0, 222)">
+      <!-- Badge 1: Notes -->
+      <rect x="0" y="0" width="120" height="34" rx="8" fill="#1E192B" stroke="#CDA9F2" stroke-width="1" stroke-opacity="0.2" />
+      <text x="14" y="22" font-size="14">📚</text>
+      <text x="36" y="21" fill="#EDE4FA" font-size="13" class="f-med">Notes</text>
+
+      <!-- Badge 2: PYQ -->
+      <rect x="130" y="0" width="120" height="34" rx="8" fill="#1E192B" stroke="#CDA9F2" stroke-width="1" stroke-opacity="0.2" />
+      <text x="144" y="22" font-size="14">📑</text>
+      <text x="166" y="21" fill="#EDE4FA" font-size="13" class="f-med">PYQ Archive</text>
+
+      <!-- Badge 3: Syllabus -->
+      <rect x="260" y="0" width="120" height="34" rx="8" fill="#1E192B" stroke="#CDA9F2" stroke-width="1" stroke-opacity="0.2" />
+      <text x="274" y="22" font-size="14">🎯</text>
+      <text x="296" y="21" fill="#EDE4FA" font-size="13" class="f-med">Syllabus</text>
+
+      <!-- Badge 4: SGPA -->
+      <rect x="390" y="0" width="140" height="34" rx="8" fill="#1E192B" stroke="#CDA9F2" stroke-width="1" stroke-opacity="0.2" />
+      <text x="404" y="22" font-size="14">🧮</text>
+      <text x="426" y="21" fill="#EDE4FA" font-size="13" class="f-med">SGPA Calc</text>
+    </g>
+
+    <!-- CTA Buttons Row -->
+    <g transform="translate(0, 280)">
+      <!-- Download APK Button -->
+      <rect x="0" y="0" width="200" height="46" rx="12" fill="url(#btnGrad)" />
+      <path d="M22 23 L28 29 L34 23 M28 15 L28 28 M18 31 L38 31" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="48" y="28" fill="#FFFFFF" font-size="15" class="f-bold">Download APK</text>
+
+      <!-- GitHub Stars / Fork -->
+      <rect x="215" y="0" width="170" height="46" rx="12" fill="#1C1826" stroke="#CDA9F2" stroke-width="1.2" stroke-opacity="0.3" />
+      <path d="M234 23 L238 15 L242 23 L250 24 L244 30 L246 38 L238 34 L230 38 L232 30 L226 24 Z" fill="#F2C14E" transform="scale(0.65) translate(120, -2)" />
+      <text x="265" y="28" fill="#EDE4FA" font-size="14" class="f-bold">Star Repo ⭐</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT: SMARTPHONE UI MOCKUP ==================== -->
+  <g transform="translate(820, 25)" filter="url(#cardShadow)">
+    <!-- Outer Phone Chassis -->
+    <rect x="0" y="0" width="280" height="430" rx="36" fill="#15121E" stroke="#3E3452" stroke-width="4" />
+    <rect x="4" y="4" width="272" height="422" rx="32" fill="#121018" />
+
+    <!-- Speaker Pill Notch -->
+    <rect x="95" y="12" width="90" height="18" rx="9" fill="#0A080F" />
+    <circle cx="165" cy="21" r="4.5" fill="#1C172B" />
+
+    <!-- App Header inside Phone Screen -->
+    <g transform="translate(18, 42)">
+      <rect x="0" y="0" width="244" height="42" rx="10" fill="#201A2D" />
+      <circle cx="20" cy="21" r="12" fill="#5B2B8E" />
+      <path d="M14 20 L20 16 L26 20 L20 24 Z M16 22 L16 25 Q20 28 24 25 L24 22" fill="none" stroke="#FFD700" stroke-width="1.2" stroke-linejoin="round" />
+      <text x="40" y="19" fill="#FFFFFF" font-size="13" class="f-bold">DU Companion</text>
+      <text x="40" y="32" fill="#9F98B4" font-size="9" class="f-med">North Campus • Sem IV</text>
+      <circle cx="225" cy="21" r="3" fill="#10B981" />
+    </g>
+
+    <!-- Hero Card Inside Screen -->
+    <g transform="translate(18, 94)">
+      <rect x="0" y="0" width="244" height="96" rx="14" fill="url(#phoneCardGrad)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4" />
+      <text x="14" y="24" fill="#CDA9F2" font-size="11" class="f-bold">ACADEMIC DASHBOARD</text>
+      <text x="14" y="46" fill="#FFFFFF" font-size="17" class="f-heavy">Target SGPA: 9.20</text>
+      
+      <!-- Progress Bar -->
+      <rect x="14" y="58" width="216" height="8" rx="4" fill="#3B265E" />
+      <rect x="14" y="58" width="168" height="8" rx="4" fill="#F2C14E" />
+      <text x="14" y="82" fill="#E2D9F3" font-size="10" class="f-med">78% Syllabus Modules Complete</text>
+    </g>
+
+    <!-- Quick Action 1: Notes -->
+    <g transform="translate(18, 200)">
+      <rect x="0" y="0" width="244" height="46" rx="10" fill="#1C1826" stroke="#CDA9F2" stroke-width="0.8" stroke-opacity="0.2" />
+      <rect x="8" y="8" width="30" height="30" rx="8" fill="#5B2B8E" />
+      <text x="17" y="28" font-size="14">📚</text>
+      <text x="48" y="22" fill="#FFFFFF" font-size="12" class="f-bold">B.Sc / B.A / B.Com Notes</text>
+      <text x="48" y="34" fill="#8E88A2" font-size="9" class="f-med">145 Files Available Offline</text>
+      <circle cx="226" cy="23" r="8" fill="#2C233D" />
+      <path d="M224 20 L228 23 L224 26" fill="none" stroke="#CDA9F2" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Quick Action 2: PYQ Question Papers -->
+    <g transform="translate(18, 254)">
+      <rect x="0" y="0" width="244" height="46" rx="10" fill="#1C1826" stroke="#CDA9F2" stroke-width="0.8" stroke-opacity="0.2" />
+      <rect x="8" y="8" width="30" height="30" rx="8" fill="#7C3AED" />
+      <text x="17" y="28" font-size="14">📑</text>
+      <text x="48" y="22" fill="#FFFFFF" font-size="12" class="f-bold">Exam Question Papers (PYQ)</text>
+      <text x="48" y="34" fill="#8E88A2" font-size="9" class="f-med">2018 - 2024 Past Papers</text>
+      <circle cx="226" cy="23" r="8" fill="#2C233D" />
+      <path d="M224 20 L228 23 L224 26" fill="none" stroke="#CDA9F2" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Quick Action 3: SGPA Calculator -->
+    <g transform="translate(18, 308)">
+      <rect x="0" y="0" width="244" height="46" rx="10" fill="#1C1826" stroke="#CDA9F2" stroke-width="0.8" stroke-opacity="0.2" />
+      <rect x="8" y="8" width="30" height="30" rx="8" fill="#9333EA" />
+      <text x="17" y="28" font-size="14">🧮</text>
+      <text x="48" y="22" fill="#FFFFFF" font-size="12" class="f-bold">DU 10-Point SGPA Calculator</text>
+      <text x="48" y="34" fill="#8E88A2" font-size="9" class="f-med">Real-time Grade Projection</text>
+      <circle cx="226" cy="23" r="8" fill="#2C233D" />
+      <path d="M224 20 L228 23 L224 26" fill="none" stroke="#CDA9F2" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Bottom Navigation Bar inside Phone -->
+    <g transform="translate(18, 370)">
+      <rect x="0" y="0" width="244" height="46" rx="14" fill="#1C172B" />
+      
+      <!-- Nav Item 1: Home (Active) -->
+      <circle cx="36" cy="23" r="14" fill="#5B2B8E" />
+      <text x="29" y="28" font-size="14">🏠</text>
+
+      <!-- Nav Item 2: Notes -->
+      <text x="88" y="28" font-size="14">📚</text>
+
+      <!-- Nav Item 3: Calc -->
+      <text x="146" y="28" font-size="14">🧮</text>
+
+      <!-- Nav Item 4: Profile -->
+      <text x="204" y="28" font-size="14">👤</text>
+    </g>
+  </g>
+</svg>
